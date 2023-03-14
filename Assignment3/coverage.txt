@@ -1,0 +1,39 @@
+============================= test session starts =============================
+platform win32 -- Python 3.10.10, pytest-7.2.2, pluggy-1.0.0
+rootdir: C:\Users\Nevetha\AML\Assignment_3
+plugins: cov-4.0.0, testinfra-7.0.0, testinfra-6.0.0
+collected 7 items
+
+test_1.py .......                                                        [100%]
+
+============================== warnings summary ===============================
+..\..\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\base.py:299
+..\..\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\base.py:299
+  C:\Users\Nevetha\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeClassifier from version 1.0.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+  https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+    warnings.warn(
+
+..\..\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\base.py:299
+..\..\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\base.py:299
+  C:\Users\Nevetha\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestClassifier from version 1.0.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+  https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+    warnings.warn(
+
+..\..\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\base.py:299
+  C:\Users\Nevetha\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator CountVectorizer from version 1.0.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+  https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+
+---------- coverage: platform win32, python 3.10.10-final-0 ----------
+Name        Stmts   Miss  Cover   Missing
+-----------------------------------------
+app.py         17     17     0%   1-21
+score.py       17      0   100%
+test_1.py      40      2    95%   59, 69
+-----------------------------------------
+TOTAL          74     19    74%
+Coverage HTML written to dir htmlcov
+
+======================== 7 passed, 5 warnings in 5.29s ========================
