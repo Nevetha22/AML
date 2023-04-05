@@ -1,9 +1,0 @@
-os
-numpy
-pandas
-pytest
-joblib
-sklearn
-requests
-sklearn.base
-sklearn.feature_extraction.text
