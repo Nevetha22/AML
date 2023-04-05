@@ -9,10 +9,10 @@ import pandas as pd
 from sklearn.base import BaseEstimator
 from sklearn.feature_extraction.text import CountVectorizer
 # In[5]:
-filename = 'C:\\Users\\Nevetha\\AML\\Assignment_3\\finalized_model.sav'
-loaded_model = joblib.load(filename)
-filename1 = 'C:\\Users\\Nevetha\\AML\\Assignment_3\\vector_model.sav'
-vect = joblib.load(filename1)
+#filename = 'C:\\Users\\Nevetha\\AML\\Assignment_4\\finalized_model.sav'
+loaded_model = joblib.load('finalized_model.sav')
+#filename1 = 'C:\\Users\\Nevetha\\AML\\Assignment_4\\vector_model.sav'
+vect = joblib.load('vector_model.sav')
 # In[6]:
 def score_model(text: str, model: BaseEstimator, threshold: float) -> tuple[bool, float]:
     # Convert the text to a numerical feature vector

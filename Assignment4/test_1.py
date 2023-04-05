@@ -3,6 +3,7 @@ import score
 import joblib
 import pytest
 import requests
+import subprocess
 
 loaded_model = joblib.load('finalized_model.sav')
 
@@ -60,10 +61,14 @@ def main():
 
 # Integration test
 def test_flask():
+    subprocess.check_call(['docker', 'build', '-t', 'report', '.'])
+    container_id = subprocess.check_output(['docker', 'run', '-d', '-p', '5000:5000', 'report']).decode().strip()
+    #os.system('python app.py &')
     # Test cases
     response = requests.post('http://127.0.0.1:5000/score')
     # Close the Flask app
-    response = requests.post('http://127.0.0.1:5000/shutdown')
+    #response = requests.post('http://127.0.0.1:5000/shutdown')
+
 
 if __name__ == "__main__":
     main()
